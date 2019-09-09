@@ -1,13 +1,90 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Fredoka One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('/images/rupaul.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 16px;
+  min-height: 100vh
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+
+h1{
+    letter-spacing: 2px;
+}
+
+h2  {
+  font-size: 1em;
+  letter-spacing: 1px
+}
+
+
+.main{
+  max-height: 100vh;
+  margin-left: 30%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+.options {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center 
+}
+
+.options figure {
+  border-radius:50%;
+  overflow: hidden;
+   height: 250px;
+  width: 250px;
+  transition: all .1s ease-in-out;
+}
+
+.options img {
+  width: 100%;
+  max-width: 250px;
+  object-fit: cover;
+}
+
+
+.options figure:hover {
+transform: scale(1.1); 
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:16px;'><text y='50%'>🌈</text></svg>") 16 0,auto; /*emojicursor.app*/
+
+}
+
+button {
+
+  border-radius: 10px;
+  color: white;
+  background-color: #00cbbd;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+  letter-spacing: 1px;
+  font-size: 1em;
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+    transition: all .1s ease-in-out;
+
+}
+
+button:hover {
+  /* opacity: 0.75; */
+  background-color: yellow;
+  color: #00cbbd;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:16px;'><text y='50%'>🌈</text></svg>") 16 0,auto; /*emojicursor.app*/
+
 }
